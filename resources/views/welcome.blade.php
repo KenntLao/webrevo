@@ -1,10 +1,12 @@
 @extends('layouts.app')
 @section('content')
-<div class="row">
-	<div class="col-12 banner">
-		<div class="row">
-			<div class="col-12 offset-md-3 col-md-6">
-				<h1>revolution begins here</h1>
+<div class="content">
+	<div class="row">
+		<div class="col-12 banner">
+			<div class="row">
+				<div class="col-12 offset-md-3 col-md-6 banner-text">
+					<h1>revolution begins here</h1>
+				</div>
 			</div>
 		</div>
 	</div>

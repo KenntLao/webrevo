@@ -1,28 +1,58 @@
 $(document).ready(function(){
+
+	$('.link > a').each(function() {
+		var txt = $(this).text();
+		var newTxt = txt.replace(/\w/g,function(c){
+		  return '<span>'+c+'</span>';
+		})
+		$(this).html(newTxt);
+	});
+
 	$('.menu-open > a').on('click', function(){
-		$('.menu-open').css({"top": "-60px", "opacity": "0"});
-		
+		$('.content').addClass('slide-1');
 		setTimeout(function(){
-			$('.block').each(function(i){
-				var block = $(this);
-				setTimeout(function() {
-				    block.addClass('animation-width');
-				    setTimeout(function(){
-				    	block.removeClass('animation-width');
-				    },1000);
-				}, 100*i);
+			$('.link > a > span').each(function(){
+				$(this).addClass('animate-link');
 			});
-		},300);
+		},700);
 		setTimeout(function(){
-			$('.menu-block').addClass('menu-active');
-		},1500);
+			$('.content').addClass('slide-2');
+			$('.menu-fs').addClass('menu-fs-slide');
+		},500);
+		$('.menu-open').css({
+			"top": "-50px",
+			"opacity": "0"
+		});
 		setTimeout(function(){
-			$('.menu-close').css({"top": "20px", "opacity": "1"});
-		},1800);
+			$('.menu-close').css({
+				"top": "20px",
+				"opacity": "1"
+			});		},1000);
+		setTimeout(function(){
+			$('.content').removeClass('slide-1');
+			$('.content').removeClass('slide-2');
+			$('.content').addClass('content-hide');
+		},1000);
 	});
 	$('.menu-close > a').on('click', function(){
-		$('.menu-close').css({"top": "-60px", "opacity": "0"});
-		$('.menu-open').css({"top": "20px", "opacity": "1"});
-		$('.menu-block').removeClass('menu-active');
+		$('.content').addClass('slide-1');
+		$('.content').removeClass('content-hide');
+		$('.menu-fs').removeClass('menu-fs-slide');
+		$('.link > a > span').each(function(){
+			$(this).removeClass('animate-link');
+		});
+		setTimeout(function(){
+			$('.content').removeClass('slide-1');
+		},500);
+		setTimeout(function(){
+			$('.menu-open').css({
+				"top": "20px",
+				"opacity": "1"
+			});
+		},1100);
+		$('.menu-close').css({
+			"top": "-50px",
+			"opacity": "0"
+		});
 	});
 });

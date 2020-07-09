@@ -14,12 +14,14 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iconate/0.3.1/iconate.min.css">
         <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}">
         @yield('css')
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{ asset('js/font-awesome.min.js') }}" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/iconate/0.3.1/iconate.js"></script>
         @yield('js')
     </head>
     <body class="d-flex flex-column">
