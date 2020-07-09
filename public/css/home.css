@@ -1,0 +1,25 @@
+.banner {
+      background: #fff;
+      height: 100vh;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
+.banner h1 {
+      text-transform: uppercase;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      /*color: #006AD3;*/
+      color: #000;
+      font-size: 120px;
+      line-height: 0.8;
+      letter-spacing: -5px;
+}
