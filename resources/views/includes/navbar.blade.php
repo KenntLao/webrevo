@@ -2,8 +2,14 @@
 	<div class="menu">
 		<div class="logo">
 			<a href="/">
+				<div class="logo-text left-text">
+					<span>webrevo</span>
+				</div>
 				<div class="logo-box">
 					<img src="{{asset('images/logo.svg')}}" alt="logo.svg">
+				</div>
+				<div class="logo-text right-text">
+					<span>systems</span>
 				</div>
 			</a>
 		</div>

@@ -55,4 +55,17 @@ $(document).ready(function(){
 			"opacity": "0"
 		});
 	});
+
+	$('.a-list > a').on('click', function(){
+		var target = $(this).attr('data-target');
+		$('.a-info').removeClass('open-info');
+		$('.info-left').removeClass('info-left-active');
+		$('.info-right').removeClass('info-right-active');
+		setTimeout(function(){
+			$('#'+target).addClass('open-info');
+			$('.info-left').addClass('info-left-active');
+			$('.info-right').addClass('info-right-active');
+		},500);
+	});
+
 });
