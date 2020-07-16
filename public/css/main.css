@@ -18,29 +18,46 @@ a {
 	color: #000;
 }
 .logo {
+	background: #fcfcfc;
 	position: fixed;
-	z-index: 1;
-	left: 50%;
 	top: 20px;
-	transform: translateX(-50%);
-}
-.logo-text {
-	position: fixed;
-	top: 50%;
-	transform: translateY(-50%);
-}
-.left-text {
-	left: -65px;
-}
-.right-text {
-	right: -58px;
+	left: 50%;
+	transform: translateX( -50%);
+	z-index: 1;
+	padding: 10px;
 }
 .logo > a {
-	text-decoration: none;
+	display: inline-flex;
 }
 .logo-box {
 	height: 40px;
 	width: 40px;
+}
+.logo-box > img {
+	display: block;
+	width: 100%;
+}
+.logo > a {
+	text-decoration: none;
+}
+.left-text {
+	margin-right: 5px;
+}
+.right-text {
+	margin-left: 5px;
+}
+.logo-text {
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
 }
 .logo-text > span {
     font-family: 'Open Sans', sans-serif;
@@ -49,10 +66,6 @@ a {
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 0px;
-}
-.logo-box > img {
-	display: block;
-	width: 100%;
 }
 .menu-open {
 	background: #fcfcfc;
