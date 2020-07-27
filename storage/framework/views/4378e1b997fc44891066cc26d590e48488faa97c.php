@@ -1,0 +1,1 @@
+<div class="container"></div><?php /**PATH C:\wamp64\www\virtualhosts\webrevo\resources\views/includes/footer.blade.php ENDPATH**/ ?>
