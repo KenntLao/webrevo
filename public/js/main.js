@@ -56,9 +56,9 @@ $(document).ready(function(){
 		});
 	});
 
-	$('.a-list > a').on('click', function(){
+	$('.b-list > a').on('click', function(){
 		var target = $(this).attr('data-target');
-		$('.a-info').removeClass('open-info');
+		$('.b-info').removeClass('open-info');
 		$('.info-left').removeClass('info-left-active');
 		$('.info-right').removeClass('info-right-active');
 		setTimeout(function(){

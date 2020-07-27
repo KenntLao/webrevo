@@ -14,7 +14,6 @@
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
         <!-- Styles -->
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/iconate/0.3.1/iconate.min.css">
         <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}">
         @yield('css')
         <!-- Scripts -->
