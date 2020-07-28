@@ -1,7 +1,8 @@
+/* BANNER SECTION -- 1ST ROW START */
 .banner {
     background: #fcfcfc;
     height: 100vh;
-    /* Center slide text vertically */
+    /* CENTER TEXT VERTICALLY */
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -25,6 +26,9 @@
     letter-spacing: -1px;
     margin-bottom: 0;
 }
+
+/* BANNER SECTION BRACKETS PLACEMENT */
+
 .bracket {
     height: 250px;
     position: absolute;
@@ -40,6 +44,9 @@
 .bracket-right {
     right: -75px;
 }
+/* BANNER SECTION -- 1ST ROW END */
+
+/* ABOUT US SECTION -- 2ND ROW START */
 
 .about {
     background: #fcfcfc;
@@ -62,24 +69,30 @@
     margin-bottom: 20px;
 }
 
+/* ABOUT US SECTION -- 2ND ROW END */
 
+/* BENEFITS SECTION & WEBSITE 101 SECTION -- 3RD ROW START */
 
-.benefit {
+#benefit_website .section {
     background: #fcfcfc;
     padding: 50px 150px !important;
 }
-.benefit-text {
+#website {
+    margin-bottom: 50px;
+}
+#benefit_website .section-text {
     background: #fcfcfc;
     padding: 40px !important;
-} 
-.benefit-text > h1 {
+    margin-bottom: 50px;
+}
+#benefit_website .section-text > h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
     font-size: 20px;
     margin-bottom: 20px;
 }
-.benefit-text > p {
+#benefit_website .section-text > p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
@@ -92,10 +105,10 @@
     font-size: 30px;
     text-transform: uppercase;
 }
-.b-list {
+#benefit_website .section-list {
     width: 100%;
 }
-.b-list > a {
+#benefit_website .section-list > a {
     color: #000;
     border: 1px solid #000;
     padding: 10px 20px;
@@ -106,19 +119,23 @@
     text-transform: uppercase;
     margin: 5px 5px 5px 0;
 }
-.b-list > a:active {
+#benefit_website .section-list > a:active {
     background: #000;
     color: #fff;
 }
-.b-info {
+#benefit_website .section-list > a.active {
+    background: #000;
+    color: #fff;
+}
+#benefit_website .section-info {
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 280px;
+    left: 72.5%;
     transform: translate(-50%, -50%);
     clip-path: inset(0 100% 0 100%);
-    transition: 0.5s ease;
+    transition: clip-path 0.5s ease;
 }
-.b-info > p {
+#benefit_website .section-info > p {
     text-align: center;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
@@ -129,29 +146,40 @@
 .open-info {
     clip-path: inset(0 0 0 0) !important;
 }
+
+/* BRACKES PLACEMENT WHEN INFO IS NOT VISIBLE */
+
 .info-bracket {
-    height: 180px;
+    height: 250px;
     position: absolute;
-    top: 50%;
-    transition: 0.5s ease;
+    z-index: 1;
+    top: 20px;
+    transform: translate(-50%,50%);
 }
 .info-bracket > img {
     display: block;
     height: 100%;
 }
 .info-left {
-    left: 45%;
-    transform: translate(-50%,-50%);
+    left: 70%;
+    transition: left 0.5s ease;
 }
 .info-right {
-    right: 45%;
-    transform: translate(50%,-50%);
+    right: 20%;
+    transition: right 0.5s ease;
 }
+
+/* BRACKETS PLACEMENT WHEN INFO IS VISIBLE */
+
 .info-left-active {
-    left: 10%;
-    transform: translate(0,-50%);
+    left: 55%;
 }
 .info-right-active {
-    right: 10%;
-    transform: translate(0,-50%);
+    right: 5%;
+}
+
+/* BENEFITS SECTION & WEBSITE 101 SECTION -- 3RD ROW END */
+
+
+.process {
 }
