@@ -69,22 +69,7 @@ $(document).ready(function(){
 			$('.info-right').addClass('info-right-active');
 		},500);
 	});
-	$(window).on('scroll', function(e) {
-	    var scroll = $(window).scrollTop();
-	    if ( scroll >= 1070 ) {
-	    	$('.info-bracket, #benefit_website .section-info').css('position', 'fixed');
-	    	$('.info-bracket').css('top', '20px');
-	    	$('#benefit_website .section-info').css('top', '280px');
-	    	var bracket = $('.info-bracket').offset().top;
-	    	if ( bracket >= 1644 ) {
-	    		$('.info-bracket, #benefit_website .section-info').css('position', 'absolute');
-	    		$('.info-bracket').css('top', '450px');
-	    		$('#benefit_website .section-info').css('top', '710px');
-	    	}
-	    } else {
-	    	$('.info-bracket, #benefit_website .section-info').css('position', 'absolute');
-	    }
-	});
+
 
 });
 

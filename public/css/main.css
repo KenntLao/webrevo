@@ -6,7 +6,8 @@ a {
 	text-decoration: none !important;
 }
 
-/* MENU */
+/* CENTERED LOGO START */
+
 .menu-link {
 	position: fixed;
 	z-index: 9999;
@@ -18,7 +19,7 @@ a {
 	color: #000;
 }
 .logo {
-	background: #fcfcfc;
+	background: rgba(252,252,252,0.95);
 	position: fixed;
 	top: 20px;
 	left: 50%;
@@ -67,6 +68,11 @@ a {
     text-transform: uppercase;
     letter-spacing: 0px;
 }
+
+/* CENTERED LOGO END */
+
+/* MENU START */
+
 .menu-open {
 	background: #fcfcfc;
 	opacity: 1;
@@ -125,12 +131,14 @@ a {
   	letter-spacing: -3px;
 }
 .link > a > span {
-	transition: 0.5s ease;
-	clip-path: inset(0 0 0 0);
+	transition: clip-path 0.5s ease;
 }
 .animate-link {
   	animation: animate 0.5s ease;
 }
+
+/* MENU LINK ANIMATION */
+
 @keyframes animate {
     0% {
         clip-path: inset(0 100% 0 0);
@@ -140,8 +148,11 @@ a {
     }
 }
 
+/* MENU END */
 
-/* BODY */
+
+/* BODY START */
+
 body {
 	background: #fff;
 }
@@ -150,7 +161,10 @@ body {
 	padding-right: 0;
 }
 
-/* STICKY FOOTER */
+/* BODY END */
+
+/* STICKY FOOTER START */
+
 html, body {
   height: 100%;
 }
@@ -167,3 +181,5 @@ html, body {
     color: #000;
 	background: #fff;
 }
+
+/* STICKY FOOTER END */

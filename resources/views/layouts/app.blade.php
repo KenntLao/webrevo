@@ -20,6 +20,7 @@
         <script src="{{ asset('js/app.js') }}" defer></script>
         <script src="{{ asset('js/font-awesome.min.js') }}" defer></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="{{ URL::asset('js/main.js') }}"></script>
         @yield('js')
     </head>
     <body class="d-flex flex-column">
