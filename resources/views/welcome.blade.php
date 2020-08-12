@@ -159,15 +159,57 @@
 			</div>
 		</div>
 	</div>
-	<div class="row no-gutters">
-		<div class="col-12 process">
-			
+	<div class="row no-gutters" id="process">
+		<div class="col-12 offset-sm-3 col-sm-6 process-text">
+			<h1>process</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua.</p>
+		</div>
+		<div class="col-12 section-process">
+			<div class="row no-gutters">
+				<div class="col-12 col-md-6 process-box left-box">
+					<span>1.</span>
+					<h2>planning</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-12 offset-md-6 col-md-6 process-box right-box">
+					<span>2.</span>
+					<h2>designing</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-12 col-md-6 process-box left-box">
+					<span>3.</span>
+					<h2>database structure</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-12 offset-md-6 col-md-6 process-box right-box">
+					<span>4.</span>
+					<h2>development</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
+			<div class="row no-gutters">
+				<div class="col-12 col-md-6 process-box">
+					<span>5.</span>
+					<h2>production</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua.</p>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
 @endsection
 @section('css')
 <link rel="stylesheet" href="{{ URL::asset('css/home.css') }}">
-@stop
-@section('js')
 @stop

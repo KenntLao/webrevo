@@ -19,7 +19,7 @@ a {
 	color: #000;
 }
 .logo {
-	background: rgba(252,252,252,0.95);
+	background: rgba(255,255,255,0.95);
 	position: fixed;
 	top: 20px;
 	left: 50%;
@@ -74,7 +74,7 @@ a {
 /* MENU START */
 
 .menu-open {
-	background: #fcfcfc;
+	background: #fff;
 	opacity: 1;
 	top: 20px;
 	right: 20px;
@@ -116,9 +116,8 @@ a {
 }
 .links {
 	position: absolute;
-	top: 40%;
-	left: 25%;
-	transform: translate(-50%,-50%);
+	top: 50px;
+	left: 50px;
 }
 .link > a {
   	font-size: 80px;
@@ -183,3 +182,51 @@ html, body {
 }
 
 /* STICKY FOOTER END */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	.links {
+		top: 20px;
+		left: 20px;
+	}
+	.link > a {
+		font-size: 30px;
+	}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+	.links {
+		top: 20px;
+		left: 20px;
+	}
+	.link > a {
+		font-size: 40px;
+	}
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.links {
+		top: 20px;
+		left: 20px;
+	}
+	.link > a {
+		font-size: 50px;
+	}
+}
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.links {
+		top: 40px;
+		left: 40px;
+	}
+	.link > a {
+		font-size: 60px;
+	}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

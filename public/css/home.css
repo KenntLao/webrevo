@@ -1,6 +1,6 @@
 /* BANNER SECTION -- 1ST ROW START */
 .banner {
-    background: #fcfcfc;
+    background: #fdfdfd;
     height: 100vh;
     /* CENTER TEXT VERTICALLY */
     display: -webkit-box;
@@ -51,7 +51,7 @@
 /* ABOUT US SECTION -- 2ND ROW START */
 
 #about {
-    background: #fcfcfc;
+    background: #fdfdfd;
 }
 .about {
     padding: 150px;
@@ -71,35 +71,39 @@
     color: #000;
     font-size: 14px;
     margin-bottom: 20px;
+    text-align: justify;
 }
 
 /* ABOUT US SECTION -- 2ND ROW END */
 
 /* BENEFITS SECTION & WEBSITE 101 SECTION -- 3RD ROW START */
 #benefit_website .section-row {
-    padding: 50px 150px !important;
-    background: #fcfcfc;
+    padding: 50px 150px 50px 100px !important;
+    background: #fdfdfd;
 }
 #benefit_website .section-row > .row {
     height: 100%;
-    background: #fcfcfc;
+    background: #fdfdfd;
 }
 #benefit_website .section-text {
     margin-bottom: 50px;
+    padding: 0 50px !important;
 }
 #benefit_website .section-text > h1 {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    word-spacing: 4px;
 }
 #benefit_website .section-text > p {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     color: #000;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
 }
 .bt {
     font-family: 'Open Sans', sans-serif;
@@ -111,15 +115,16 @@
     width: 100%;
 }
 #benefit_website .section-list > a {
+    background: #fff;
     color: #000;
-    border: 1px solid #000;
+    box-shadow: 5px 3px 7px rgba(0,0,0,0.08);
     padding: 10px 20px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 15px;
     display: inline-block;
     text-transform: uppercase;
-    margin: 5px 5px 5px 0;
+    margin: 1.5px 0 1.5px 0;
 }
 #benefit_website .section-list > a:active {
     background: #000;
@@ -192,6 +197,105 @@
 
 /* BENEFITS SECTION & WEBSITE 101 SECTION -- 3RD ROW END */
 
+/* PROCESS SECTION -- 4TH ROW START */
+
+#process {
+    background: #fdfdfd;
+}
+.process-text {
+    padding: 50px 0;
+    margin-bottom: 30px;
+}
+.process-text > h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.process-text > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.section-process {
+    background: #fdfdfd;
+    padding: 50px 150px !important;
+}
+.process-box {
+    padding: 50px !important;
+    box-shadow: 5px 3px 7px rgba(0,0,0,0.08);
+    margin-bottom: 50px;
+    position: relative;
+    background: #fff;
+}
+.process-box > span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000;
+    font-size: 14px;
+}
+.process-box > h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.process-box > p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: #000;
+    font-size: 14px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.left-box:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    height: 50%;
+    width: 1px;
+    background: #efefef;
+}
+.left-box:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    width: 50%;
+    height: 1px;
+    background: #efefef;
+}
+.right-box:before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 50%;
+    height: 50%;
+    width: 1px;
+    background: #efefef;
+}
+.right-box:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    right: 50%;
+    width: 50%;
+    height: 1px;
+    background: #efefef;
+}
+
+/* PROCESS SECTION -- 4TH ROW END */
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .banner-text > h1 {
@@ -213,8 +317,14 @@
     #benefit_website .section-row {
         padding: 20px !important;
     }
+    #benefit_website .section-text {
+        padding: 0 !important;
+    }
     .box-absolute {
         display: none;
+    }
+    .process-text, .section-process {
+        padding: 20px !important;
     }
 }
 
@@ -239,8 +349,14 @@
     #benefit_website .section-row {
         padding: 20px !important;
     }
+    #benefit_website .section-text {
+        padding: 0 !important;
+    }
     .box-absolute {
         display: none;
+    }
+    .process-text, .section-process {
+        padding: 20px !important;
     }
 }
 
@@ -265,6 +381,13 @@
     #benefit_website .section-row {
         padding: 20px !important;
     }
+    #benefit_website .section-text {
+        padding: 0 !important;
+        padding-right: 20px !important;
+    }
+    .process-text, .section-process {
+        padding: 20px !important;
+    }
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -285,6 +408,13 @@
         right: -110px;
     }
     #benefit_website .section-row {
+        padding: 40px !important;
+    }
+    #benefit_website .section-text {
+        padding: 0 !important;
+        padding-right: 40px !important;
+    }
+    .process-text, .section-process {
         padding: 40px !important;
     }
 }

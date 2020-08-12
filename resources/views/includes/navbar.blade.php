@@ -1,6 +1,6 @@
 <header>
 	<div class="menu">
-		<div class="logo">
+		<!--<div class="logo">
 			<a href="/">
 				<div class="logo-text left-text">
 					<span>webrevo</span>
@@ -12,7 +12,7 @@
 					<span>systems</span>
 				</div>
 			</a>
-		</div>
+		</div>-->
 		<div class="menu-link menu-open">
 			<a href="javascript:void(0)"><i class="fa fa-bars"></i></a>
 		</div>
